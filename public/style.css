@@ -19,8 +19,6 @@ body {
 
 .mountain {
     flex-grow:1;
-    /* max-width: 25%; */
-    /* min-width: 20%; */
     width:20%;
     min-width:200px;
     max-width: 400px;
@@ -35,4 +33,11 @@ body {
     font-style: bold;
     font-size:large;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.image {
+    max-width:90%;
+    max-height:55%;
+    border-radius:5%;
+    border:1px solid black;
 }

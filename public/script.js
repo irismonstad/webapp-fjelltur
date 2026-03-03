@@ -4,23 +4,32 @@ function displayData(mountain) {
     const name = mountain.fjellnavn;
     const height = mountain.hoyde;
     const desc = mountain.beskrivelse;
+    const photo = mountain.foto;
 
     const mountainDiv = document.createElement('div');
     mountainDiv.classList.add('mountain');
     main.appendChild(mountainDiv);
 
+    const infoDiv = document.createElement('div');
+    mountainDiv.appendChild(infoDiv);
+
     const nameElement = document.createElement('p');
     nameElement.classList.add('name');
     nameElement.innerText = `${name}`;
-    mountainDiv.appendChild(nameElement);
+    infoDiv.appendChild(nameElement);
 
     const heightElement = document.createElement('p');
     heightElement.innerText = `Høyde: ${height} meter`;
-    mountainDiv.appendChild(heightElement);
+    infoDiv.appendChild(heightElement);
 
     const descElement = document.createElement('p');
     descElement.innerText = `Beskrivelse: ${desc}`;
-    mountainDiv.appendChild(descElement);
+    infoDiv.appendChild(descElement);
+
+    const photoElement = document.createElement('img');
+    photoElement.classList.add('image');
+    photoElement.src = `../images/${photo}`;
+    mountainDiv.appendChild(photoElement);
 }
 
 async function fetchData(){

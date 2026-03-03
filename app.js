@@ -11,7 +11,7 @@ const cors = require('cors');
 app.use(cors());
 
 app.get('/api/fjell_info', (req, res) => {
-    const rows = db.prepare('SELECT fjellnavn, hoyde, beskrivelse FROM fjell').all();
+    const rows = db.prepare('SELECT fjellnavn, hoyde, beskrivelse, foto FROM fjell').all();
     res.json(rows);
 });
 
