@@ -1,0 +1,38 @@
+body, html {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+body {
+    background-color: rgb(167, 167, 167);
+    align-content: center;
+}
+
+#main {
+    display:flex;
+    padding:1em;
+    gap:1em;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.mountain {
+    flex-grow:1;
+    /* max-width: 25%; */
+    /* min-width: 20%; */
+    width:20%;
+    min-width:200px;
+    max-width: 400px;
+    border:1px solid black;
+    padding:1em;
+    height:19em;
+    text-align: left;
+    background-color: white;
+}
+
+.name {
+    font-style: bold;
+    font-size:large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
