@@ -27,6 +27,7 @@ body {
     height:19em;
     text-align: left;
     background-color: white;
+    height:fit-content;
 }
 
 .name {
@@ -36,8 +37,10 @@ body {
 }
 
 .image {
-    max-width:90%;
-    max-height:55%;
+    width:97%;
     border-radius:5%;
     border:1px solid black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
